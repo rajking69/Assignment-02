@@ -198,4 +198,139 @@ a {
     background-color: rgba(16, 185, 129, 0.1);
 }
 
+/*5. ABOUT SECTION*/
+.about-section {
+    background-color: #1A0B2E;
+    padding: 3rem 1rem;
+}
+
+.about-container {
+    text-align: center;
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section-title {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text {
+    color: #D1D5DB;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.about-divider {
+    border-top: 1px solid #4B5563;
+    margin: 2.5rem 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    color: #10B981;
+    font-weight: bold;
+    font-size: 1.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #9CA3AF;
+    font-size: 0.75rem;
+}
+
+/*6. FEATURES SECTION*/
+.features-section {
+    background-color: #1A0B2E;
+    padding: 5rem 2rem;
+}
+
+.features-container {
+    max-width: 72rem;
+    margin: 0 auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-areas: 
+        'audio mobile mobile'
+        'audio community community'
+        'interviews interviews resources';
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 2rem;
+    border-radius: 2.5rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    background-color: rgba(53, 17, 101, 0.6);
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(145, 0, 248, 0.3);
+}
+
+.feature-audio {
+    grid-area: audio;
+}
+
+.feature-mobile {
+    grid-area: mobile;
+}
+
+.feature-community {
+    grid-area: community;
+}
+
+.feature-interviews {
+    grid-area: interviews;
+}
+
+.feature-resources {
+    grid-area: resources;
+}
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.feature-icon img {
+    width: 3.75rem;
+    height: 3.75rem;
+}
+
+.feature-title {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-description {
+    color: #9CA3AF;
+    font-size: 1rem;
+    line-height: 1.625;
+}
+
 
