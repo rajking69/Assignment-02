@@ -546,13 +546,17 @@ a {
     animation: microphone-rotate 5s ease-in-out;
 }
 
-/*10. TABLET RESPONSIVE (@640px+)*/
-@media (min-width: 640px) {
+/*10. MOBILE VIEW (less than 576px)*/
+@media (max-width: 575px) {
+    /* Mobile styles are already defined as base styles above */
+}
+
+/*11. TABLET RESPONSIVE (576px - 992px)*/
+@media (min-width: 576px) and (max-width: 992px) {
 
     .navbar-container {
         padding: 1rem 2rem;
     }
-
 
     .hero-container {
         padding: 3rem 1rem;
@@ -599,23 +603,22 @@ a {
         height: 1.25rem;
     }
 
-   
     .section-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-bottom: 2rem;
     }
 
     .about-section {
-        padding: 5rem 2rem;
+        padding: 4rem 2rem;
     }
 
     .about-text {
-        font-size: 1.125rem;
+        font-size: 1rem;
         margin-bottom: 1.5rem;
     }
 
     .about-divider {
-        margin: 4rem 0;
+        margin: 3rem 0;
     }
 
     .stats-grid {
@@ -623,25 +626,23 @@ a {
     }
 
     .stat-number {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .stat-label {
         font-size: 0.875rem;
     }
 
-   
     .episodes-section {
-        padding: 5rem 2rem;
+        padding: 4rem 2rem;
     }
 
     .episodes-container {
         padding: 0 2rem;
     }
 
-
     .host-section {
-        padding: 5rem 2rem;
+        padding: 4rem 2rem;
     }
 
     .host-container {
@@ -649,25 +650,24 @@ a {
     }
 
     .host-profile {
-        padding: 3rem;
+        padding: 2.5rem;
     }
 
     .host-image {
-        width: 16rem;
-        height: 16rem;
+        width: 12rem;
+        height: 12rem;
     }
 
     .host-name {
-        font-size: 1.875rem;
+        font-size: 1.5rem;
     }
 
     .host-bio {
-        font-size: 1.125rem;
+        font-size: 1rem;
     }
 
-  
     .footer {
-        padding: 4rem 2rem;
+        padding: 3rem 2rem;
     }
 
     .footer-container {
@@ -675,8 +675,8 @@ a {
     }
 
     .footer-logo {
-        font-size: 2.25rem;
-        margin-bottom: 3rem;
+        font-size: 1.875rem;
+        margin-bottom: 2.5rem;
     }
 
     .footer-links {
@@ -684,21 +684,21 @@ a {
     }
 
     .footer-link {
-        font-size: 1rem;
+        font-size: 0.938rem;
     }
 
     .footer-link img {
-        width: 1.25rem;
-        height: 1.25rem;
+        width: 1.125rem;
+        height: 1.125rem;
     }
 
     .footer-copyright {
-        font-size: 0.875rem;
+        font-size: 0.813rem;
     }
 }
 
-/*11. DESKTOP RESPONSIVE (@1024px+)*/
-@media (min-width: 1024px) {
+/*12. DESKTOP RESPONSIVE (993px+)*/
+@media (min-width: 993px) {
 
     .hamburger-menu {
         display: none;
@@ -752,7 +752,6 @@ a {
         padding: 0.75rem 2rem;
     }
 
- 
     .features-grid {
         display: grid;
         grid-template-areas: 
@@ -761,19 +760,16 @@ a {
             'interviews interviews resources';
     }
 
-
     .stats-grid {
         display: flex;
         justify-content: space-between;
     }
-
 
     .episodes-grid {
         flex-direction: row;
         justify-content: center;
     }
 
-   
     .host-profile {
         display: flex;
         align-items: center;
@@ -782,6 +778,16 @@ a {
 
     .host-image {
         margin: 0;
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .host-name {
+        font-size: 1.875rem;
+    }
+
+    .host-bio {
+        font-size: 1.125rem;
     }
 
     .host-info {
@@ -792,10 +798,63 @@ a {
         justify-content: flex-start;
     }
 
-    /* Footer */
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .about-section {
+        padding: 5rem 2rem;
+    }
+
+    .about-text {
+        font-size: 1.125rem;
+    }
+
+    .about-divider {
+        margin: 4rem 0;
+    }
+
+    .stat-number {
+        font-size: 3rem;
+    }
+
+    .episodes-section {
+        padding: 5rem 2rem;
+    }
+
+    .host-section {
+        padding: 5rem 2rem;
+    }
+
+    .host-profile {
+        padding: 3rem;
+    }
+
+    .footer {
+        padding: 4rem 2rem;
+    }
+
+    .footer-logo {
+        font-size: 2.25rem;
+        margin-bottom: 3rem;
+    }
+
     .footer-links {
         display: flex;
         justify-content: center;
         gap: 2rem;
+    }
+
+    .footer-link {
+        font-size: 1rem;
+    }
+
+    .footer-link img {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.875rem;
     }
 }
